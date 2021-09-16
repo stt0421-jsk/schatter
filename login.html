@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/login.css">
+        <title>Log In</title>
+    </head>
+    <body>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+        <script src="js/login.js"></script>
+        <div class="background">
+            <div class="shape" id="bl-cir"></div>
+            <div class="shape" id="or-cir"></div>
+        </div>
+        <form>
+            <h3>Log In</h3>
+            <label for="email">E-mail</label>
+            <input type="text" placeholder="Email" id="email">
+            <label for="pw">Password</label>
+            <input type="password" placeholder="Password" id="pw">
+            <button id="submit" onclick="login(); return false;">Log In</button>
+            <button id="signup" onclick="window.location.href='signup.html'; return false;">Register</button>
+        </form>
+    </body>
+</html>
